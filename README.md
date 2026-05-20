@@ -16,10 +16,10 @@ Build a classical machine-learning system that classifies satellite images into 
 ---
  
 ### Part 2 — Preprocessing
-- [ ] Resize each image to 128×128
-- [ ] Convert to grayscale
-- [ ] Apply Histogram Equalization / CLAHE
-- [ ] Apply Gaussian or Median filtering
+- [x] Resize each image to 128×128
+- [x] Convert to grayscale
+- [x] Apply Histogram Equalization / CLAHE
+- [x] Apply Gaussian or Median filtering
 ---
  
 ### Part 3 — Feature Engineering
