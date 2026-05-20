@@ -9,9 +9,9 @@ Build a classical machine-learning system that classifies satellite images into 
  
 ### Part 1 — Dataset Preparation
 - [x] Download fMoW dataset from AWS S3
-- [x] Select 500 images for **Urban** class
-- [x] Select 500 images for **Natural** class
-- [x] Create 80:20 train-test split (400 train / 100 test per class)
+- [x] Select 700 images for **Urban** class
+- [x] Select 700 images for **Natural** class
+- [x] Create 80:20 train-test split
 - [x] Keep one external real-world image for final evaluation
 ---
  
