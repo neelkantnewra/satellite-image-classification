@@ -59,16 +59,16 @@ Build a classical machine-learning system that classifies satellite images into 
  
 ```
 fmow_data/
-├── urban/               (500 images)
-├── natural/             (500 images)
+├── urban/               (700 images)
+├── natural/             (700 images)
 ├── external/            (1 image — held out for final evaluation)
 └── splits/
     ├── train/
-    │   ├── urban/       (400 images)
-    │   └── natural/     (400 images)
+    │   ├── urban/       (560 images)
+    │   └── natural/     (560 images)
     └── test/
-        ├── urban/       (100 images)
-        └── natural/     (100 images)
+        ├── urban/       (140 images)
+        └── natural/     (140 images)
 ```
  
 ## Urban Categories (from fMoW)
