@@ -216,3 +216,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+
+# fMoW Download — 500 Urban + 500 Natural + 1 External Test --- IGNORE ---
+fmow_data/*
