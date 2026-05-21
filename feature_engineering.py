@@ -55,7 +55,7 @@ def hog_features(img):
     features = hog(
         img,
         orientations=9,
-        pixels_per_cell=(8, 8),
+        pixels_per_cell=(16, 16),
         cells_per_block=(2, 2),
         block_norm="L2-Hys",
         visualize=False

@@ -1,6 +1,6 @@
 
 # Satellite Image Classification — Results Report
-**Generated:** 2026-05-21 11:15:08
+**Generated:** 2026-05-21 11:34:50
 
 ---
 
@@ -9,26 +9,26 @@
 ### 5-Fold Cross Validation
 | Metric    | SVM                                                        | Random Forest                                             |
 |-----------|------------------------------------------------------------|-----------------------------------------------------------|
-| Accuracy  | 0.7348 ± 0.0264   | 0.5687 ± 0.0189  |
-| Precision | 0.7388 ± 0.0342 | 0.5703 ± 0.0201|
-| Recall    | 0.7286 ± 0.0223       | 0.5625 ± 0.0204     |
-| F1        | 0.7334 ± 0.0243               | 0.5660 ± 0.0152             |
+| Accuracy  | 0.7598 ± 0.0268   | 0.7161 ± 0.0249  |
+| Precision | 0.7626 ± 0.0173 | 0.7035 ± 0.0261|
+| Recall    | 0.7536 ± 0.0488       | 0.7482 ± 0.0273     |
+| F1        | 0.7576 ± 0.0325               | 0.7249 ± 0.0233             |
 
 ### Test Set
 | Metric    | SVM       | Random Forest |
 |-----------|-----------|---------------|
-| Accuracy  | 0.7036  | 0.5821        |
-| Precision | 0.8065  | 0.6186        |
-| Recall    | 0.5357  | 0.4286        |
-| F1        | 0.6438  | 0.5063        |
+| Accuracy  | 0.7429  | 0.6821        |
+| Precision | 0.7742  | 0.6977        |
+| Recall    | 0.6857  | 0.6429        |
+| F1        | 0.7273  | 0.6691        |
 
 ---
 
 ## 2. External Image Prediction
 | Model         | Prediction       | Urban Prob | Natural Prob |
 |---------------|------------------|------------|--------------|
-| SVM           | Urban            | 0.968      | 0.032         |
-| Random Forest | Urban            | 0.595      | 0.405         |
+| SVM           | Urban            | 0.966      | 0.034         |
+| Random Forest | Urban            | 0.655      | 0.345         |
 
 ---
 
@@ -40,8 +40,8 @@
 | Sobel + Canny       | Sobel histogram + edge ratio + mag  | 18       |
 | HOG Descriptors     | 9 orientations, 16×16 cells, 2×2    | 324      |
 | Raw Total           |                                     | 470      |
-| After Var.Threshold | threshold=0.01                      | 8191      |
-| After PCA (95% var) | n_components                        | 1010      |
+| After Var.Threshold | threshold=0.01                      | 1855      |
+| After PCA (95% var) | n_components                        | 356      |
 
 ---
 

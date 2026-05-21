@@ -39,7 +39,7 @@ X_ext_scaled   = scaler.transform(X_external)
 
 # ── Step 2: Variance Thresholding ────────────────────────────
 print("\nApplying Variance Threshold...")
-selector = VarianceThreshold(threshold=0.001)
+selector = VarianceThreshold(threshold=0.01)
 X_train_vt = selector.fit_transform(X_train_scaled)
 X_test_vt  = selector.transform(X_test_scaled)
 X_ext_vt   = selector.transform(X_ext_scaled)
@@ -51,12 +51,12 @@ print(f"  Features after  : {X_train_vt.shape[1]}")
 
 # ── Step 3: PCA ───────────────────────────────────────────────
 print("\nFitting PCA...")
-pca = PCA(n_components=0.99, svd_solver="full")   # keep 99% variance
+pca = PCA(n_components=0.95, svd_solver="full")   # keep 95% variance
 X_train_pca = pca.fit_transform(X_train_vt)
 X_test_pca  = pca.transform(X_test_vt)
 X_ext_pca   = pca.transform(X_ext_vt)
 
-print(f"  Components kept : {pca.n_components_} (explains 99% variance)")
+print(f"  Components kept : {pca.n_components_} (explains 95% variance)")
 print(f"  X_train PCA     : {X_train_pca.shape}")
 print(f"  X_test  PCA     : {X_test_pca.shape}")
 
@@ -66,7 +66,7 @@ cumvar = np.cumsum(pca.explained_variance_ratio_) * 100
 fig, axes = plt.subplots(1, 2, figsize=(12, 4))
 
 axes[0].plot(cumvar, color="steelblue", linewidth=2)
-axes[0].axhline(99, color="red", linestyle="--", label="99% threshold")
+axes[0].axhline(95, color="red", linestyle="--", label="95% threshold")
 axes[0].axvline(pca.n_components_ - 1, color="green", linestyle="--",
                 label=f"{pca.n_components_} components")
 axes[0].set_xlabel("Number of Components")
@@ -115,7 +115,7 @@ print(f"""
 Pipeline:
   Raw features       : {X_train.shape[1]}
   After Var.Threshold: {X_train_vt.shape[1]}  ({removed} removed)
-  After PCA (99% var): {pca.n_components_}  components
+  After PCA (95% var): {pca.n_components_}  components
 
 Saved to fmow_selected/
   ├── selected_features.pkl  (all arrays + fitted transformers)
