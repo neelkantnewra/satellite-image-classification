@@ -40,8 +40,18 @@ scoring = {
 cv = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)
 
 # ── Model 1: SVM ──────────────────────────────────────────────
-print("\nTraining SVM (5-fold CV)...")
-svm = SVC(kernel="rbf", C=10, gamma="scale", probability=True, random_state=42)
+print("\nTraining SVM (5-fold CV with Grid Search)...")
+from sklearn.model_selection import GridSearchCV
+
+param_grid = {
+    "C"     : [1, 10, 50, 100],
+    "gamma" : ["scale", "auto", 0.01, 0.001]
+}
+grid = GridSearchCV(SVC(probability=True, random_state=42),
+                    param_grid, cv=5, scoring="f1", n_jobs=-1, verbose=2)
+grid.fit(X_train, y_train)
+print(f"Best SVM params: {grid.best_params_}")
+svm = grid.best_estimator_
 svm_cv = cross_validate(svm, X_train, y_train, cv=cv, scoring=scoring, return_train_score=True)
 
 print(f"  Accuracy  : {svm_cv['test_accuracy'].mean():.4f} ± {svm_cv['test_accuracy'].std():.4f}")

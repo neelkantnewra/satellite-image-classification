@@ -54,6 +54,47 @@ Build a classical machine-learning system that classifies satellite images into 
 - [ ] Analyse misclassifications and limitations
 - [ ] Recommendations for future hybrid models (handcrafted + CNNs)
 ---
+
+---
+
+## Getting Started
+ 
+### Prerequisites
+- Python 3.9+
+- AWS CLI (for dataset download)
+- ~500 MB free disk space
+### Step 1 — Clone the repository
+```bash
+git clone <your-repo-url>
+cd satellite-image-classification
+```
+ 
+### Step 2 — Create virtual environment
+```bash
+python3 -m venv .venv
+```
+ 
+### Step 3 — Activate virtual environment
+```bash
+# Mac / Linux
+source .venv/bin/activate
+ 
+# Windows
+.venv\Scripts\activate
+```
+ 
+### Step 4 — Install dependencies
+```bash
+pip install -r requirements.txt
+```
+ 
+### Step 5 — Run the full pipeline
+```bash
+make all
+```
+
+---
+
  
 ## Dataset Structure
  
