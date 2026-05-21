@@ -223,3 +223,4 @@ fmow_data/*
 fmow_preprocessed/*
 fmow_features/*
 fmow_selected/*
+fmow_models/*
