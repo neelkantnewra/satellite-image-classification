@@ -1,4 +1,18 @@
-# Satellite Image Classification (Urban vs. Natural) Using Classical Vision + ML
+<div align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=32&duration=3000&pause=1000&color=FFFFFF&background=1a472a&center=true&vCenter=true&width=700&height=100&lines=🛰️+Satellite+Image+Classification;Urban+vs+Natural+%7C+fMoW+Dataset" alt="Typing SVG" />
+
+  <p><strong>Classical Computer Vision + Machine Learning Pipeline</strong><br></p>
+
+  ![Last Commit](https://img.shields.io/github/last-commit/neelkantnewra/satellite-image-classification?color=green&style=flat-square)
+  ![License](https://img.shields.io/badge/license-MIT-blue?style=flat-square)
+  ![Python](https://img.shields.io/badge/python-3.9+-blue?style=flat-square&logo=python)
+  ![Dataset](https://img.shields.io/badge/dataset-fMoW-orange?style=flat-square)
+  ![SVM Accuracy](https://img.shields.io/badge/SVM%20accuracy-72.5%25-brightgreen?style=flat-square)
+  ![RF Accuracy](https://img.shields.io/badge/RF%20accuracy-68.2%25-yellow?style=flat-square)
+</div>
+
+---
+
 Build a classical machine-learning system that classifies satellite images into Urban or Natural categories using handcrafted image features. The system must incorporate pixellevel, texture, and gradient-based features and evaluate performance on a real external image.
 
 
@@ -65,7 +79,7 @@ Build a classical machine-learning system that classifies satellite images into 
 - ~500 MB free disk space
 ### Step 1 — Clone the repository
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/neelkantnewra/satellite-image-classification.git
 cd satellite-image-classification
 ```
  
