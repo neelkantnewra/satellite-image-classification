@@ -221,3 +221,5 @@ __marimo__/
 # fMoW Download — 500 Urban + 500 Natural + 1 External Test --- IGNORE ---
 fmow_data/*
 fmow_preprocessed/*
+fmow_features/*
+fmow_selected/*

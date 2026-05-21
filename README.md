@@ -23,17 +23,17 @@ Build a classical machine-learning system that classifies satellite images into 
 ---
  
 ### Part 3 — Feature Engineering
-- [ ] Pixel intensity histogram (low-level)
-- [ ] LBP texture descriptor (low-level)
-- [ ] Edge detection using Sobel / Canny (low-level)
-- [ ] Histogram of Oriented Gradients — HOG (mid-level)
-- [ ] SIFT / ORB descriptors (mid-level, optional)
-- [ ] Store extracted features in CSV / NumPy / Pickle format
+- [x] Pixel intensity histogram (low-level)
+- [x] LBP texture descriptor (low-level)
+- [x] Edge detection using Sobel / Canny (low-level)
+- [x] Histogram of Oriented Gradients — HOG (mid-level)
+- [x] SIFT / ORB descriptors (mid-level, optional)
+- [x] Store extracted features in CSV / NumPy / Pickle format
 ---
  
 ### Part 4 — Feature Selection
-- [ ] Apply PCA for dimensionality reduction, OR
-- [ ] Apply Variance Thresholding to drop low-information features
+- [x] Apply PCA for dimensionality reduction, OR
+- [x] Apply Variance Thresholding to drop low-information features
 ---
  
 ### Part 5 — Model Training
