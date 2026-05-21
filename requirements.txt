@@ -26,6 +26,7 @@ s3transfer==0.17.0
 scikit-image==0.26.0
 scikit-learn==1.8.0
 scipy==1.17.1
+seaborn==0.13.2
 six==1.17.0
 threadpoolctl==3.6.0
 tifffile==2026.3.3
